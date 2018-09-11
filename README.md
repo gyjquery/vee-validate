@@ -1,30 +1,17 @@
-# checkboxes
+# vee-validate
 
 > A Vue.js project
 
 ## Build Setup
 
 ``` bash
-# install dependencies
-npm install
+ vee-validate 前端校验工具   可以使用内置校验+自定义校验   一起使用
 
-# serve with hot reload at localhost:8080
-npm run dev
+有两种使用形式
 
-# build for production with minification
-npm run build
+v-validate="'required|min:2|email'"
 
-# build for production and view the bundle analyzer report
-npm run build --report
-
-# run unit tests
-npm run unit
-
-# run e2e tests
-npm run e2e
-
-# run all tests
-npm test
+v-validate="{required:true,regex: /(^\d{15}$)|(^\d{18}$)|(^\d{17}(\d|X|x)$)/}"
 ```
 
 For a detailed explanation on how things work, check out the [guide](http://vuejs-templates.github.io/webpack/) and [docs for vue-loader](http://vuejs.github.io/vue-loader).
